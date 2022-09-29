@@ -1,0 +1,20 @@
+<h1>Users</h1>
+
+
+{{#each users}}
+<section>
+    <h2>
+        {{name}}
+    </h2>
+    <h3>Adres</h3>
+    <address>
+        <div>{{address.street}} {{address.suite}}</div>
+        <div>{{address.city}}</div>
+        <div>{{address.zipcode}}</div>        
+        <a href="http://{{website}}" target="_blank">{{website}}</a>
+        // http:/localhost:8080/onet.pl
+    </address>
+
+</section>
+{{/each}}
+
